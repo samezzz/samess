@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${GeistSans.className} max-w-[1100px] min-h-screen flex flex-col mx-auto px-8 md:px-32`}
+        className={`${GeistSans.className} max-w-[1100px] min-h-screen flex flex-col mx-auto px-6 md:px-32`}
       >
         <ThemeProvider
           attribute="class"

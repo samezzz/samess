@@ -1,11 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import { SocialHoverCard } from "./hover-card";
+import { main } from "@/app/styles";
 
 const Info = () => {
   return (
     <section className="flex flex-col items-start gap-y-8">
-      <p className="dark:text-[#D4D4D4]">
+      <p className={`${main.paragraph}`}>
         I&apos;m a fullstack developer and a Biomedical Engineering student with
         a passion for music, coding, video editing, and exploring the
         intricacies of the Bible. I&apos;m on a journey to blend melodies on the
@@ -13,13 +14,13 @@ const Info = () => {
         languages to help build the future of the web.
       </p>
 
-      <p className="dark:text-[#D4D4D4]">
+      <p className={`${main.paragraph}`}>
         I&apos;ve dealt with programming languages like Python, JavaScript,
         Typescript, C, C++, Go and I think I&apos;d want to further navigate the
         world of frameworks like React, and Nextjs.
       </p>
 
-      <p className="dark:text-[#D4D4D4]">
+      <p className={`${main.paragraph}`}>
         Eager to share insights, I&apos;m brewing content centered around the
         Bible and
         <Link

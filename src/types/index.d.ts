@@ -12,6 +12,13 @@ export type LinkItem = {
     icon?: keyof typeof Icons
 }
 
+export type ProjectType = {
+  name: string
+  description: string
+  href?: string
+  image?: string
+}
+
 export type SiteConfig = {
     name: string
     description: string

@@ -1,8 +1,10 @@
 import { Icons } from "@/components/icons";
 import Info from "@/components/info";
+import { ModeToggle } from "@/components/mode-toggle";
 import Profile from "@/components/profile";
 import { links } from "@/constants";
 import Link from "next/link";
+import { main } from "./styles";
 
 export default function Home() {
   return (
@@ -10,12 +12,12 @@ export default function Home() {
       <div className=" mt-20">
         <Profile />
       </div>
-      <h1 className="text-5xl font-medium leading-[54px]">
+      <h1 className={`${main.heading1}`}>
         Programmer. Musician.
         <br />
         Video Editor.
       </h1>
-      <h3 className="text-2xl font-semibold">hey, I&apos;m Samess 👋</h3>
+      <h3 className={`${main.heading3}`}>hey, I&apos;m Samess 👋</h3>
       <Info />
       <div className="flex gap-x-8 mb-32">
         {links.map((link, index) => {
@@ -27,6 +29,7 @@ export default function Home() {
           );
         })}
       </div>
+      <ModeToggle />
     </main>
   );
 }

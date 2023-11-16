@@ -8,7 +8,7 @@ export const nav: NavItem[] = [
     {
         name: "Projects",
         href: "/projects",
-        disabled: true
+        disabled: false
     },
     {
         name: "Blog",
