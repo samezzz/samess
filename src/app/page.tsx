@@ -18,7 +18,7 @@ export default function Home() {
       </h1>
       <h3 className="text-2xl font-semibold">hey, I&apos;m Samess 👋</h3>
       <Info />
-      <div className="flex gap-x-6">
+      <div className="flex gap-x-6 mb-32">
         {links.map((link, index) => {
           const Icon = Icons[link.icon || "close"];
           return (
