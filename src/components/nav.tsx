@@ -19,7 +19,7 @@ const Navbar = () => {
               "text-[#737373] hover:text-primary",
               pathname === navItem.href ? "text-primary font-semibold" : "transparent",
               navItem.disabled && "cursor-not-allowed opacity-80 hover:text-[#737373]"
-            )} href={navItem.href}>
+            )} href={navItem.disabled ? "/" : navItem.href}>
               {navItem.name}
             </Link>
             {index !== nav.length - 1 && <Separator orientation="vertical" />}
