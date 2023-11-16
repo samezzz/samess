@@ -1,4 +1,6 @@
-import React from 'react'
+import Link from "next/link";
+import React from "react";
+import { SocialHoverCard } from "./hover-card";
 
 const Info = () => {
   return (
@@ -18,14 +20,21 @@ const Info = () => {
       </p>
 
       <p className="dark:text-[#D4D4D4]">
-        Eager to share insights, I&apos;m brewing content centered around Bible
-        devotionals, aiming to fuse engaging visuals and top-notch audio to
-        deliver enriching experiences. Currently honing my skills in video
-        editing, I&apos;m crafting a distinctive persona for an entertaining
-        touch in my upcoming...
+        Eager to share insights, I&apos;m brewing content centered around the
+        Bible and
+        <Link
+          href="https://www.youtube.com/@DagHewardMillsvideos"
+          className="dark:text-gray-200 underline underline-offset-2"
+        >
+          <SocialHoverCard text="Evangelist Dag Heward-Mills" />
+        </Link>
+        , aiming to fuse engaging visuals and top-notch audio to deliver
+        enriching experiences. Currently honing my skills in video editing,
+        I&apos;m crafting a distinctive persona for an entertaining touch in my
+        upcoming...
       </p>
     </section>
-  )
-}
+  );
+};
 
-export default Info
+export default Info;
