@@ -17,12 +17,12 @@ export default function Home() {
       </h1>
       <h3 className="text-2xl font-semibold">hey, I&apos;m Samess 👋</h3>
       <Info />
-      <div className="flex gap-x-6 mb-32">
+      <div className="flex gap-x-8 mb-32">
         {links.map((link, index) => {
           const Icon = Icons[link.icon || "close"];
           return (
             <Link href={link.href} key={index}>
-              <Icon className="h-6 w-6" />
+              <Icon className="h-6 w-6 hover:h-3/4 transition-all" />
             </Link>
           );
         })}
