@@ -17,7 +17,7 @@ export function SocialHoverCard({ text }: SocialHoverCardProps) {
   return (
     <HoverCard>
       <HoverCardTrigger asChild>
-        <Button variant="link">{text}</Button>
+        <Button variant="link" className="px-0">{ text }</Button>
       </HoverCardTrigger>
       <HoverCardContent className="w-80">
         <div className="flex justify-between space-x-4">
