@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React from "react";
 import { Separator } from "@/components/ui/separator";
@@ -8,18 +8,24 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
-    <nav className="py-10 mx-auto">
+    <nav className="py-10 mx-auto mt-4 md:mt-8">
       <div className="flex h-5 items-center space-x-4 text-sm">
         {nav.map((navItem, index) => (
           <React.Fragment key={index}>
-            <Link className={cn(
-              "text-[#737373] hover:text-primary",
-              pathname === navItem.href ? "text-primary font-semibold" : "transparent",
-              navItem.disabled && "cursor-not-allowed opacity-80 hover:text-[#737373]"
-            )} href={navItem.disabled ? "/" : navItem.href}>
+            <Link
+              className={cn(
+                "text-[#737373] hover:text-[#1C1C1C] hover:dark:text-primary transition-all duration-500 ease-in-out",
+                pathname === navItem.href
+                  ? "text-primary font-semibold"
+                  : "transparent",
+                navItem.disabled &&
+                  "cursor-not-allowed opacity-80 hover:dark:text-[#737373]"
+              )}
+              href={navItem.disabled ? "/" : navItem.href}
+            >
               {navItem.name}
             </Link>
             {index !== nav.length - 1 && <Separator orientation="vertical" />}

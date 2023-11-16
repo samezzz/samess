@@ -20,17 +20,28 @@ export const links: LinkItem[] = [
 
 export const projects: ProjectType[] = [
   {
-    name: "Danenbes",
+    name: "danenbes",
     description:
       "At Danebes, our team of skilled professionals employs a meticulous methodology to tailor Biomedical Engineering solutions",
     href: "https://danebes.vercel.app",
-    image: "",
+    domain: "danebes.vercel.app",
+    image: "/next.svg",
+    
   },
   {
     name: "qcc",
     description:
-      "your unique requirements. Our focus extends to factors such as precision engineering, technological advancements, and client-specific needs. Discover quality services and innovative products designed to elevate healthcare solutions",
+      "your unique requirements. Our focus extends to factors such as precision engineering, technological advancements, and client-specific needs.",
     href: "https://qcc.vercel.app",
-    image: "",
+    domain: "qcc.vercel.app",
+    image: "/vercel.svg",
+  },
+  {
+    name: "evangelist-dag-devotionals",
+    description:
+      "your unique requirements. Our focus extends to factors such as precision engineering, technological advancements, and client-specific needs.",
+    href: "https://evangelist-dag-devotionals.vercel.app",
+    domain: "evangelist-dag-devotionals.vercel.app",
+    image: "/next.svg",
   },
 ];

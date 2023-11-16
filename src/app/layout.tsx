@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GeistSans } from 'geist/font/sans';
+import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/nav";
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${GeistSans.className} max-w-[1100px] min-h-screen flex flex-col mx-auto px-6 md:px-32`}
+        className={`${GeistSans.className} max-w-[1100px] min-h-screen flex flex-col md:px-32 antialiased`}
       >
         <ThemeProvider
           attribute="class"
@@ -25,8 +25,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-            <Navbar />
-            {children}
+          <header className="sticky top-0 z-40">
+            <div className="container flex h-16 items-center justify-between py-4">
+              <Navbar />
+            </div>
+          </header>
+          <div className="container">{children}</div>
         </ThemeProvider>
       </body>
     </html>

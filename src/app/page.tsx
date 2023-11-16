@@ -8,8 +8,8 @@ import { main } from "./styles";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-start gap-y-8">
-      <div className=" mt-20">
+    <main className="w-full flex flex-col items-start gap-y-8">
+      <div className="mt-20">
         <Profile />
       </div>
       <h1 className={`${main.heading1}`}>
@@ -29,7 +29,7 @@ export default function Home() {
           );
         })}
       </div>
-      <ModeToggle />
+      {/* <ModeToggle /> */}
     </main>
   );
 }

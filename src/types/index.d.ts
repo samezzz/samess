@@ -16,6 +16,7 @@ export type ProjectType = {
   name: string
   description: string
   href?: string
+  domain?: string
   image?: string
 }
 

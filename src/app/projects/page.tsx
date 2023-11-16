@@ -2,12 +2,14 @@ import React from "react";
 import { main } from "../styles";
 import { projects } from "@/constants";
 import MasonryLayout from "@/components/mason-layout";
+import { Droplets } from "lucide-react";
 
 const Projects = () => {
   return (
     <div className="flex flex-col items-start gap-y-8">
-      <h1 className={`${main.heading1} mt-20`}>
-        Creating Ripples: <br /> My Journey in Making an Impact.
+        <Droplets className="mt-20 h-12 w-12 md:h-18 md:w-18 text-blue-500" />
+      <h1 className={`${main.heading1}`}>
+        Creating Ripples: <br /> My Journey🚀 in Making an Impact.
         <br />
       </h1>
       <p className={`${main.paragraph}`}>
