@@ -1,7 +1,7 @@
 import { Icons } from "@/components/icons";
 import Info from "@/components/info";
 import Profile from "@/components/profile";
-import { links } from "@/config/nav-config";
+import { links } from "@/constants";
 import Link from "next/link";
 
 export default function Home() {
