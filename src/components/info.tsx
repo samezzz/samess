@@ -21,14 +21,14 @@ const Info = () => {
 
       <p className="dark:text-[#D4D4D4]">
         Eager to share insights, I&apos;m brewing content centered around the
-        Bible and
+        Bible,
         <Link
           href="https://www.youtube.com/@DagHewardMillsvideos"
           className="dark:text-gray-200 underline underline-offset-2"
         >
           <SocialHoverCard text="Evangelist Dag Heward-Mills" />
         </Link>
-        , aiming to fuse engaging visuals and top-notch audio to deliver
+        and aiming to fuse engaging visuals and top-notch audio to deliver
         enriching experiences. Currently honing my skills in video editing,
         I&apos;m crafting a distinctive persona for an entertaining touch in my
         upcoming...
