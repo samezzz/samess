@@ -62,3 +62,11 @@
 .card:hover .link {
   @apply text-blue-500 dark:text-blue-300 transition-all duration-500 ease-in-out
 }
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 18px 0 rgba(104, 106, 134, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
