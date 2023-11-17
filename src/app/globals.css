@@ -52,3 +52,13 @@
     --ring: 240 4.9% 83.9%;
   }
 }
+
+.card {
+  @apply px-4 py-8 relative cursor-pointer w-auto hover:shadow-lg hover:dark:shadow-white/20 rounded-lg overflow-hidden transition-all duration-500 ease-in-out
+}
+
+
+
+.card:hover .link {
+  @apply text-blue-500 dark:text-blue-300 transition-all duration-500 ease-in-out
+}

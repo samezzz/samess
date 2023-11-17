@@ -1,6 +1,5 @@
 import { Icons } from "@/components/icons";
 import Info from "@/components/info";
-import { ModeToggle } from "@/components/mode-toggle";
 import Profile from "@/components/profile";
 import { links } from "@/constants";
 import Link from "next/link";
@@ -29,7 +28,6 @@ export default function Home() {
           );
         })}
       </div>
-      {/* <ModeToggle /> */}
     </main>
   );
 }

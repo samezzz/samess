@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/nav";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export const metadata: Metadata = {
   title: "Samess",
@@ -25,12 +26,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <header className="sticky top-0 z-40">
+          <header className="sticky top-0 z-40 ">
             <div className="container flex h-16 items-center justify-between py-4">
               <Navbar />
             </div>
           </header>
           <div className="container">{children}</div>
+          <ModeToggle />
         </ThemeProvider>
       </body>
     </html>
