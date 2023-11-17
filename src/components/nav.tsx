@@ -11,7 +11,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="py-10 mx-auto mt-4 md:mt-8">
+    <nav className="py-10 mx-auto mt-8 md:mt-12">
       <div className="flex h-5 items-center space-x-4 text-sm">
         {nav.map((navItem, index) => (
           <React.Fragment key={index}>

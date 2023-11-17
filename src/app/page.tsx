@@ -8,7 +8,7 @@ import { main } from "./styles";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col items-start gap-y-8">
+    <main className="max-w-[900px] mx-auto flex flex-col items-start gap-y-8">
       <div className="mt-20">
         <Profile />
       </div>

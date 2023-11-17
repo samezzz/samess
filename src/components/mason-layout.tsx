@@ -6,9 +6,11 @@ import ProjectCard from "./project-card";
 import { ProjectType } from "@/types";
 
 const breakpointColumnsObj = {
-  default: 2,
+  default: 3,
+  1100: 2,
   1000: 2,
-  600: 1,
+  700:2,
+  500: 1,
 };
 
 interface MasonryLayoutProps {
@@ -22,7 +24,7 @@ const MasonryLayout = ({items}: MasonryLayoutProps) => (
     breakpointCols={breakpointColumnsObj}
   >
     {items?.map((item, index) => (
-      <ProjectCard key={index} project={item} className="max-w mt-5" />
+      <ProjectCard key={index} project={item} className="max-w mx-auto" />
     ))}
   </Masonry>
 );

@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/dialog";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Link as LinkIcon } from "lucide-react";
+import { main } from "@/app/styles";
 
 interface ProjectCardProps {
   project: ProjectType;
@@ -23,7 +24,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, className }: ProjectCardProps) => {
   return (
-    <div className={`${className} px-2 mx-2 my-4`}>
+    <div className={`${className} px-2 mx-2 `}>
       <Dialog>
         <DialogTrigger asChild>
           <div className="px-4 py-8 relative cursor-pointer w-auto hover:shadow-lg hover:dark:shadow-white/20 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
@@ -36,8 +37,8 @@ const ProjectCard = ({ project, className }: ProjectCardProps) => {
                 className=""
               />
               <h3 className={`text-xl mt-6 font-semibold`}>{project.name}</h3>
-              <p className="mt-3">{project.description}</p>
-              <div className="flex gap-x-3 mt-6 items-baseline">
+              <p className={`${main.paragraph} mt-3 text-sm`}>{project.description}</p>
+              <div className="flex gap-x-3 mt-6 items-center text-sm">
                 <LinkIcon className="h-4 w-4" />
                 {project.domain}
               </div>
@@ -47,16 +48,16 @@ const ProjectCard = ({ project, className }: ProjectCardProps) => {
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
             <DialogTitle>{project.name}</DialogTitle>
-            <DialogDescription className="gap-y-3 mt-4">
-              {/* <AspectRatio ratio={16 / 9} className="bg-red-500">
+            <DialogDescription className=" mt-4">
+              <AspectRatio ratio={16 / 9} className="bg-red-500">
                 <Image
                   src={project.image ? project.image : "default"}
                   alt="Image"
                   width={100}
                   height={100}
-                  className="rounded-md object-cove "
+                  className="rounded-md object-cover"
                 />
-              </AspectRatio> */}
+              </AspectRatio>
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">
