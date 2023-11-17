@@ -10,7 +10,7 @@ const breakpointColumnsObj = {
   1100: 2,
   1000: 2,
   700:2,
-  500: 1,
+  600: 1,
 };
 
 interface MasonryLayoutProps {
