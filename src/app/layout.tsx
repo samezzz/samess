@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${GeistSans.className} min-h-screen flex flex-col antialiased`}
+        className={`${GeistSans.className} bg-[#111010] min-h-screen flex flex-col antialiased`}
       >
         <ThemeProvider
           attribute="class"
