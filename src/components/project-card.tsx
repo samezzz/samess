@@ -27,7 +27,7 @@ const ProjectCard = ({ project, className }: ProjectCardProps) => {
             <p className={`${main.paragraph} mt-3 text-sm`}>
               {project.description}
             </p>
-            <div className="flex gap-x-3 mt-6 items-center text-sm link">
+            <div className="text-gray-400 flex gap-x-3 mt-6 items-center text-sm link">
               <LinkIcon className="h-4 w-4" />
               {project.domain}
             </div>

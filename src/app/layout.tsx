@@ -32,7 +32,7 @@ export default function RootLayout({
             </div>
           </header>
           <div className="container">{children}</div>
-          <ModeToggle />
+          {/* <ModeToggle /> */}
         </ThemeProvider>
       </body>
     </html>
