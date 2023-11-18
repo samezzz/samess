@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Link as LinkIcon } from "lucide-react";
 import { main } from "@/app/styles";
+import { ImageIcon } from "lucide-react";
+import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 
 interface ProjectCardProps {
   project: ProjectType;
@@ -16,13 +18,16 @@ const ProjectCard = ({ project, className }: ProjectCardProps) => {
       <div className={`${className} px-2 mx-2 `}>
         <div className="card">
           <div className="">
-            <Image
+            <AspectRatio ratio={16/9} className="bg-muted rounded-lg">
+              <ImageIcon className="h-52 w-52 m-auto link" />
+            {/* <Image
               src="/vercel.svg"
               width={300}
               height={300}
               alt="Project image"
               className=""
-            />
+            /> */}
+            </AspectRatio>
             <h3 className={`text-xl mt-6 font-semibold`}>{project.name}</h3>
             <p className={`${main.paragraph} mt-3 text-sm`}>
               {project.description}
