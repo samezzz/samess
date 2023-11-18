@@ -6,6 +6,10 @@ export const nav: NavItem[] = [
         href: "/"
     },
     {
+        name: "About",
+        href: "/about"
+    },
+    {
         name: "Projects",
         href: "/projects",
         disabled: false

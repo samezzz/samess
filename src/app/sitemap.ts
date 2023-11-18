@@ -5,6 +5,10 @@ export default function sitemap() {
             lastModified: new Date(),
         },
         {
+            url: "https://samess.vercel.app/about",
+            lastModified: new Date(),
+        },
+        {
             url: "https://samess.vercel.app/projects",
             lastModified: new Date(),
         },
