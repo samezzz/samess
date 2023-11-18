@@ -5,6 +5,11 @@ import { links } from "@/constants";
 import Link from "next/link";
 import { main } from "./styles";
 
+export const metadata = {
+  title: "Home | About",
+  description: "Just a little bit about myself"
+}
+
 export default function Home() {
   return (
     <main className="max-w-[900px] mx-auto flex flex-col items-start gap-y-8">

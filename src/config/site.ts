@@ -3,7 +3,7 @@ import { SiteConfig } from "@/types"
 export const siteConfig: SiteConfig = {
   name: "Samess",
   description:
-    "My personal site",
+    "My personal portfolio site",
   url: "https://samess.vercel.app",
   ogImage: "",
   links: {
