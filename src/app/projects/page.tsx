@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <div className="flex flex-col items-start">
       <div className="flex flex-col gap-y-8 max-w-[900px] mx-auto">
-        <Droplets className="mt-20 h-12 w-12 md:h-18 md:w-18 text-blue-500" />
+        <Droplets className="mt-20 h-16 w-16 md:h-18 md:w-18 text-blue-500" />
         <h1 className={`${main.heading1}`}>
           Creating Ripples: <br /> My Journey🚀 in Making an Impact.
           <br />

@@ -19,7 +19,7 @@ const ProjectCard = ({ project, className }: ProjectCardProps) => {
         <div className="card">
           <div className="">
             <AspectRatio ratio={16/9} className="bg-muted rounded-lg">
-              <ImageIcon className="h-52 w-52 m-auto link text-white dark:text-gray-500" />
+              <ImageIcon className="h-52 w-52 m-auto text-white dark:text-gray-500" />
             {/* <Image
               src="/vercel.svg"
               width={300}
