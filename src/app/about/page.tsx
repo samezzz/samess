@@ -1,11 +1,12 @@
-import Profile from '@/components/profile';
 import React from 'react'
 import { main } from '../styles';
 import Info from '@/components/info';
-import { links } from '@/constants';
-import Link from 'next/link';
-import { Icons } from '@/components/icons';
 import { InfoCircledIcon } from '@radix-ui/react-icons';
+
+export const metadata = {
+  title: "About",
+  description: "Get to know me more"
+}
 
 const About = () => {
   return (

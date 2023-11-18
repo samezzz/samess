@@ -4,6 +4,11 @@ import { projects } from "@/constants";
 import MasonryLayout from "@/components/mason-layout";
 import { Droplets } from "lucide-react";
 
+export const metadata = {
+  title: "Projects",
+  description: "Some works I've worked on"
+}
+
 const Projects = () => {
   return (
     <div className="flex flex-col items-start">
