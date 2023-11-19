@@ -26,7 +26,7 @@ const Projects = () => {
           for updates and insights as these endeavors evolve
         </p>
       </div>
-      <div>{projects && <MasonryLayout items={projects}/>}</div>
+      <div className="mb-20">{projects && <MasonryLayout items={projects}/>}</div>
     </div>
   );
 };

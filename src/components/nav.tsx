@@ -34,7 +34,7 @@ const Navbar = () => {
           <React.Fragment key={index}>
             <Link
               className={cn(
-                "text-[#737373] hover:text-[#1C1C1C] hover:dark:text-primary transition-all duration-500 ease-in-out ",
+                "text-[#737373] hover:text-[#1C1C1C] hover:dark:text-primary transition-all duration-500 ease-in-out hover:text-semibold",
                 isScrolled && 'dark:text-gray-300',
                 pathname === navItem.href
                   ? "text-primary font-semibold"
@@ -50,7 +50,7 @@ const Navbar = () => {
           </React.Fragment>
         ))}
       </div>
-      <Separator className="my-4" />
+      {!isScrolled && <Separator className="my-4" />}
     </nav>
   );
 };

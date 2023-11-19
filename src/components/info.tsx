@@ -25,7 +25,7 @@ const Info = () => {
         Bible and
         <Link
           href="https://www.youtube.com/@DagHewardMillsvideos"
-          className="dark:text-gray-200 underline underline-offset-2"
+          className=""
         >
           <SocialHoverCard text="Evangelist Dag Heward-Mills" />
         </Link>, aiming to fuse engaging visuals and top-notch audio to deliver

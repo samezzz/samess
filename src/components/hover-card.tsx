@@ -17,7 +17,7 @@ export function SocialHoverCard({ text }: SocialHoverCardProps) {
   return (
     <HoverCard>
       <HoverCardTrigger asChild>
-        <Button variant="link" className="pr-0 pl-1">{ text }</Button>
+        <Button variant="link" className="pr-0 pl-1 underline hover:text-blue-300 transition-all duration-500 ease-in-out">{ text }</Button>
       </HoverCardTrigger>
       <HoverCardContent className="w-80">
         <div className="flex justify-between space-x-4">

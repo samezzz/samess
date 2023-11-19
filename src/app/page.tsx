@@ -22,7 +22,7 @@ export default function Home() {
         Video Editor.
       </h1>
       <h3 className={`${main.heading3}`}>hey, I&apos;m Samess 👋</h3>
-      <p className={`${main.paragraph}`}>I&apos;m on a journey to blend melodies on the bass guitar and keyboard while delving into the realms of programming languages to help build the future of the web<Link href="/about" className="underline tracking-[3px] hover:text-green-500/80 transition-all duration-500 ease-in-out ml-1 text-2xl">...</Link></p>
+      <p className={`${main.paragraph}`}>I&apos;m on a journey to blend melodies on the bass guitar and keyboard while delving into the realms of programming languages to help build the future of the web<Link href="/about" className="underline tracking-[3px] hover:text-blue-300 transition-all duration-500 ease-in-out ml-1 text-2xl">...</Link></p>
       <div className="flex gap-x-8 mb-32">
         {links.map((link, index) => {
           const Icon = Icons[link.icon || "close"];
