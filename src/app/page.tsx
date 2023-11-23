@@ -4,6 +4,7 @@ import Profile from "@/components/profile";
 import { links } from "@/constants";
 import Link from "next/link";
 import { main } from "./styles";
+import HeroText from "@/components/hero-text";
 
 export const metadata = {
   title: "Home",
@@ -16,11 +17,7 @@ export default function Home() {
       <div className="mt-20">
         <Profile />
       </div>
-      <h1 className={`${main.heading1}`}>
-        Programmer. Musician.
-        <br />
-        Video Editor.
-      </h1>
+      <HeroText /> 
       <h3 className={`${main.heading3}`}>hey, I&apos;m Samess 👋</h3>
       <p className={`${main.paragraph}`}>I&apos;m on a journey to blend melodies on the bass guitar and keyboard while delving into the realms of programming languages to help build the future of the web<Link href="/about" className="underline tracking-[3px] hover:text-blue-300 transition-all duration-500 ease-in-out ml-1 text-2xl">...</Link></p>
       <div className="flex gap-x-8 mb-32">
@@ -33,6 +30,7 @@ export default function Home() {
           );
         })}
       </div>
+      <p className="text-sm dark:text-[#D4D4D4] italic">psalmuelselfie@gmail.com</p>
     </main>
   );
 }
