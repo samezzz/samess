@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/nav";
 import { ModeToggle } from "@/components/mode-toggle";
 import { siteConfig } from "@/config/site";
+import { Analytics } from "@/components/analytics";
 
 export const metadata: Metadata = {
   title: {
@@ -67,7 +68,10 @@ export default function RootLayout({
               <Navbar />
             </div>
           </header>
-          <div className="container">{children}</div>
+          <div className="container">
+            {children}
+            <Analytics />
+          </div>
           {/* <ModeToggle /> */}
         </ThemeProvider>
       </body>
