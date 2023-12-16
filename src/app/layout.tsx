@@ -53,28 +53,43 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body
-        className={`${GeistSans.className} dark:bg-[#111010] min-h-screen flex flex-col antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <header className="sticky top-0 z-40 ">
-            <div className="container flex h-16 items-center justify-between py-4">
-              <Navbar />
-            </div>
-          </header>
-          <div className="container">
-            {children}
-            <Analytics />
-          </div>
-          {/* <ModeToggle /> */}
-        </ThemeProvider>
-      </body>
-    </html>
+		<html lang="en">
+			<head>
+				<link rel="icon" href="/favicon.ico" sizes="any" />
+				<link
+					rel="icon"
+					href="/icon?<generated>"
+					type="image/<generated>"
+					sizes="<generated>"
+				/>
+				<link
+					rel="apple-touch-icon"
+					href="/apple-icon?<generated>"
+					type="image/<generated>"
+					sizes="<generated>"
+				/>
+			</head>
+			<body
+				className={`${GeistSans.className} dark:bg-[#111010] min-h-screen flex flex-col antialiased`}
+			>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="system"
+					enableSystem
+					disableTransitionOnChange
+				>
+					<header className="sticky top-0 z-40 ">
+						<div className="container flex h-16 items-center justify-between py-4">
+							<Navbar />
+						</div>
+					</header>
+					<div className="container">
+						{children}
+						<Analytics />
+					</div>
+					{/* <ModeToggle /> */}
+				</ThemeProvider>
+			</body>
+		</html>
   );
 }
