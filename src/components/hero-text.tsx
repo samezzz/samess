@@ -31,24 +31,24 @@ const HeroText = () => {
 		<h1 className={`${main.heading1}`}>
 			<br />
 			<span
-				className="hoverable-text"
-				onMouseEnter={() => setHoveredProgrammer("Developer.")}
+				className=""
+				onMouseEnter={() => setHoveredProgrammer("👨🏿‍💻💻")}
 				onMouseLeave={() => setTimeout(resetProgrammer, 1500)}
 			>
 				{hoveredProgrammer}
 			</span>
 			<br />
 			<span
-				className="hoverable-text"
-				onMouseEnter={() => setHoveredMusician("Composer.")}
+				className=""
+				onMouseEnter={() => setHoveredMusician("🎶🎸")}
 				onMouseLeave={() => setTimeout(resetMusician, 1500)}
 			>
 				{hoveredMusician}
 			</span>
 			<br />
 			<span
-				className="hoverable-text"
-				onMouseEnter={() => setHoveredEditor("Content Creator.")}
+				className=""
+				onMouseEnter={() => setHoveredEditor("📽🎥")}
 				onMouseLeave={() => setTimeout(resetEditor, 1500)}
 			>
 				{hoveredEditor}

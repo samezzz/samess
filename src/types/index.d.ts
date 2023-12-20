@@ -18,6 +18,7 @@ export type ProjectType = {
   href?: string
   domain?: string
   image?: string
+  unique?: string
 }
 
 export type SiteConfig = {

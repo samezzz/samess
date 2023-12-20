@@ -1,46 +1,61 @@
-import React from "react";
-import { ProjectType } from "@/types";
-import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
+import { CardTitle, CardDescription, CardHeader, Card } from "@/components/ui/card";
 import Link from "next/link";
-import { Link as LinkIcon } from "lucide-react";
-import { main } from "@/app/styles";
-import { ImageIcon } from "lucide-react";
-import { AspectRatio } from "@radix-ui/react-aspect-ratio";
+import Image from "next/image";
+import { ProjectType } from "@/types";
+import { Icons } from "./icons";
+import { cn } from "@/lib/utils";
+import ProjectDescription from "./project-description";
 
 interface ProjectCardProps {
-  project: ProjectType;
-  className: string;
+	project: ProjectType;
+	className: string;
 }
 
-const ProjectCard = ({ project, className }: ProjectCardProps) => {
-  return (
-    <Link href={project.href ? project.href : "/"}>
-      <div className={`${className} px-2 mx-2 `}>
-        <div className="card">
-          <div className="">
-            <AspectRatio ratio={16/9} className="bg-muted rounded-lg">
-              <ImageIcon className="h-52 w-52 m-auto text-white dark:text-gray-500" />
-            {/* <Image
-              src="/vercel.svg"
-              width={300}
-              height={300}
-              alt="Project image"
-              className=""
-            /> */}
-            </AspectRatio>
-            <h3 className={`text-xl mt-6 font-semibold`}>{project.name}</h3>
-            <p className={`${main.paragraph} mt-3 text-sm`}>
-              {project.description}
-            </p>
-            <div className="text-gray-400 flex gap-x-3 mt-6 items-center text-sm link">
-              <LinkIcon className="h-4 w-4" />
-              {project.domain}
-            </div>
-          </div>
-        </div>
-      </div>
-    </Link>
-  );
-};
-
-export default ProjectCard;
+export default function ProjectCard({ project, className }: ProjectCardProps) {
+	return (
+		<Link
+			href={project.href ? project.href : "/"}
+			target="_blank"
+			className="relative overflow-hidden"
+		>
+			<div className={`${className} p-2 mx-[2.5px]`}>
+				<Card className="card">
+					<Image
+						alt="Background Image"
+						className="absolute inset-0 h-full w-full object-cover opacity-[0.15] blur-sm"
+						height={200}
+						width={200}
+						src={project.image as string}
+						style={{
+							aspectRatio: "200/200",
+							objectFit: "cover",
+						}}
+					/>
+					<CardHeader className="relative px-6 py-4">
+						<CardTitle className="font-bold text-2xl mb-2">{project.name}</CardTitle>
+						<ProjectDescription description={project.description} />
+					</CardHeader>
+					<div className={cn("relative px-6 ", project.unique && "pb-2 mt-2")}>
+						{project.unique ? (
+							<Badge
+								className={cn(
+									"items-start justify-center mr-2 px-2 inline-flex gap-x-1 text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"
+								)}
+							>
+								{project.unique}
+								{project.name === "Danebes" ? <Icons.views className="h-5 w-5 ml-1"/> : <Icons.users className="h-4 w-4" />}
+							</Badge>
+						) : (
+							""
+						)}
+					</div>
+					<div className="relative px-6 pb-6 pt-3 flex gap-x-2 text-sm link">
+						<Icons.link className="h-4 w-4" />
+						{project.domain}
+					</div>
+				</Card>
+			</div>
+		</Link>
+	);
+}

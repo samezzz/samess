@@ -20,27 +20,30 @@ export const links: LinkItem[] = [
 
 export const projects: ProjectType[] = [
 	{
-		name: "danenbes",
+		name: "QCC",
 		description:
-			"At Danebes, our team of skilled professionals employs a meticulous methodology to tailor Biomedical Engineering solutions",
+			"A comprehensive Database Management System tailored specifically for our church community. This innovative web application serves as a central hub, effortlessly managing member information, event coordination, resource allocation, and communication channels.",
+		href: "https://qcc.vercel.app",
+		domain: "qcc.vercel.app",
+		image: "/qcc.jpeg",
+		unique: "100",
+	},
+	{
+		name: "Daily Counsel",
+		description:
+			"This Web Blog app is where you can find inspiring messages shared by our Bishop. It's like a peaceful corner online where you can read and reflect on these messages. It's all about helping people connect with meaningful thoughts and grow spiritually.",
+		href: "https://evangelist-dag-devotionals.vercel.app",
+		domain: "evangelist-dag-devotionals.vercel.app",
+		image: "/quietTime.jpeg",
+		unique: "200",
+	},
+	{
+		name: "Danebes",
+		description:
+			"A functional landing page for Danebes Biomedical Services. Danebes specializes in offering reagents, Mindray machines, and top-notch services related to these products. The landing page showcases the services and products offered, creating a welcoming and informative platform for potential clients.",
 		href: "https://danebes.vercel.app",
 		domain: "danebes.vercel.app",
 		image: "/next.svg",
-	},
-	{
-		name: "qcc",
-		description:
-			"your unique requirements. Our focus extends to factors such as precision engineering, technological advancements, and client-specific needs.",
-		href: "https://qcc.vercel.app",
-		domain: "qcc.vercel.app",
-		image: "/vercel.svg",
-	},
-	{
-		name: "evangelist-dag-devotionals",
-		description:
-			"your unique requirements. Our focus extends to factors such as precision engineering, technological advancements, and client-specific needs.",
-		href: "https://evangelist-dag-devotionals.vercel.app",
-		domain: "evangelist-dag-devotionals.vercel.app",
-		image: "/next.svg",
+		unique: "2K",
 	},
 ];
