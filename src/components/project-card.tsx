@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { CardTitle, CardDescription, CardHeader, Card } from "@/components/ui/card";
+import { CardTitle, CardHeader, Card } from "@/components/ui/card";
 import Link from "next/link";
 import Image from "next/image";
 import { ProjectType } from "@/types";
@@ -44,7 +44,11 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
 								)}
 							>
 								{project.unique}
-								{project.name === "Danebes" ? <Icons.views className="h-5 w-5 ml-1"/> : <Icons.users className="h-4 w-4" />}
+								{project.name === "Danebes" ? (
+									<Icons.views className="h-5 w-5 ml-1" />
+								) : (
+									<Icons.users className="h-4 w-4" />
+								)}
 							</Badge>
 						) : (
 							""

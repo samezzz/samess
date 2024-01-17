@@ -26,7 +26,7 @@ export const projects: ProjectType[] = [
 		href: "https://qcc.vercel.app",
 		domain: "qcc.vercel.app",
 		image: "/qcc.jpeg",
-		unique: "100",
+		unique: "50+ Users",
 	},
 	{
 		name: "Daily Counsel",
@@ -35,7 +35,7 @@ export const projects: ProjectType[] = [
 		href: "https://evangelist-dag-devotionals.vercel.app",
 		domain: "evangelist-dag-devotionals.vercel.app",
 		image: "/quietTime.jpeg",
-		unique: "200",
+		unique: "100+ Users",
 	},
 	{
 		name: "Danebes",
@@ -44,6 +44,6 @@ export const projects: ProjectType[] = [
 		href: "https://danebes.vercel.app",
 		domain: "danebes.vercel.app",
 		image: "/next.svg",
-		unique: "2K",
+		unique: "1K+ Views",
 	},
 ];
