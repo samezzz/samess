@@ -44,7 +44,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
 								)}
 							>
 								{project.unique}
-								{project.name === "Danebes" ? (
+								{project.name === "Danebes" || "Typing Testament" ? (
 									<Icons.views className="h-5 w-5 ml-1" />
 								) : (
 									<Icons.users className="h-4 w-4" />

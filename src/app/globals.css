@@ -49,6 +49,15 @@
 	}
 }
 
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
+
 .card {
 	@apply shadow-lg transform hover:scale-105 transition-transform duration-200 ease-in-out rounded-lg overflow-hidden border-border;
 }

@@ -43,7 +43,16 @@ export const projects: ProjectType[] = [
 			"A functional landing page for Danebes Biomedical Services. Danebes specializes in offering reagents, Mindray machines, and top-notch services related to these products. The landing page showcases the services and products offered, creating a welcoming and informative platform for potential clients.",
 		href: "https://danebes.vercel.app",
 		domain: "danebes.vercel.app",
-		image: "/next.svg",
+		image: "/DBS.jpg",
 		unique: "1K+ Views",
+	},
+	{
+		name: "Typing Testament",
+		description:
+			"The unique typing experience that combines the art of keyboard mastery with the timeless wisdom of the Bible. Immerse yourself in the sacred verses as you enhance your typing skills. Whether you're a wordsmith or a Bible enthusiast, this app provides a seamless blend of scripture and typing practice. Elevate your typing journey with the divine words, and let your fingers dance across the keyboard in harmony with the teachings.",
+		href: "https://typing-testament.vercel.app",
+		domain: "typing-testament.vercel.app",
+		image: "/tt.jpg",
+		unique: "500+ Views",
 	},
 ];
